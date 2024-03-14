@@ -2,14 +2,19 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var routes = [
     {
-        path: ["/", "/home"],
+        path: "/",
         exact: true,
         component: "Home",
     },
     {
-        path: ["/support"],
+        path: "/support",
         exact: true,
         component: "Support"
+    },
+    {
+        path: "/contact",
+        exact: true,
+        component: "Contact"
     }
 ];
 exports.default = routes;

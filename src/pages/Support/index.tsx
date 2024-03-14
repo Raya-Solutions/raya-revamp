@@ -1,5 +1,5 @@
 import { lazy } from "react";
-import ContactContent from "../../content/ContactContent.json";
+import SupportContent from "../../content/SupportContent.json";
 const Contact = lazy(() => import("../../components/ContactForm"));
 const Container = lazy(() => import("../../common/Container"));
 
@@ -7,9 +7,9 @@ const Support = () => {
     return (
         <Container>
         <Contact
-            title={ContactContent.title}
-            content={ContactContent.text}
-            id="contact"
+            title={SupportContent.title}
+            content={SupportContent.text}
+            id="support"
         />
         </Container>
         )

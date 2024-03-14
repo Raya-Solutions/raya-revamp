@@ -9,6 +9,11 @@ const routes = [
       path: "/support",
       exact: true,
       component: "Support"
+  },
+  {
+      path: "/contact",
+      exact: true,
+      component: "Contact"
   }
 ];
 
