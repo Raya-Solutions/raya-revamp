@@ -10,11 +10,10 @@ interface Props {
     x: string; // x (twitter)
     email: string;
     phone: string;
-    address: string;
 }
 
 // TODO: update social logos to correct ones.
-const BusinessInfo = ({ fb, x, email, phone, address}: Props) => {
+const BusinessInfo = ({ fb, x, email, phone}: Props) => {
     return (
         <>
             <Space size="large" />
