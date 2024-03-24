@@ -1,4 +1,4 @@
-import { Row, Col } from "antd";
+import { Row, Col, Select } from "antd";
 import { withTranslation } from "react-i18next";
 import { Slide, Zoom } from "react-awesome-reveal";
 import { ContactProps, ValidationTypeProps } from "./types";
@@ -7,6 +7,7 @@ import validateSupport from "../../common/utils/validationRules";
 import { Button } from "../../common/Button";
 import Block from "../Block";
 import Input from "../../common/Input";
+import SelectInput from "../../common/Select";
 import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
 
@@ -64,13 +65,16 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <ValidationType type="phone" />
               <Col span={24}>
-                <Input
-                  type="text"
-                  name="category"
-                  placeholder="Choose a category"
-                  value={values.category || ""}
-                  onChange={handleChange}
-                />
+                <SelectInput
+                    name="category"
+                    onChange={handleChange}
+                    defaultValue="account">
+                    {/** TODO: make this dynamic. **/ }
+                    <Select.Option value="account">Account assistance</Select.Option>
+                    <Select.Option value="billing">Billing inquiries</Select.Option>
+                    <Select.Option value="product">Product feedback</Select.Option>
+                    <Select.Option value="technical">Technical support</Select.Option>
+                </SelectInput>
               </Col>
               <Col span={24}>
                 <TextArea
