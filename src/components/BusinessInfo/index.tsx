@@ -16,9 +16,10 @@ interface Props {
   line1: string;
   line2: string;
   line3: string;
+  line4: string;
 }
 // TODO: $evamp the code to use the props properly.
-const BusinessInfo = ({ fb, x, email, phone, line1, line2, line3 }: Props) => {
+const BusinessInfo = ({ fb, x, email, phone, line1, line2, line3, line4 }: Props) => {
   return (
     <Container>
         <Space direction="vertical">
@@ -73,6 +74,7 @@ const BusinessInfo = ({ fb, x, email, phone, line1, line2, line3 }: Props) => {
                     <MinDesc>{line1}</MinDesc>
                     <MinDesc>{line2}</MinDesc>
                     <MinDesc>{line3}</MinDesc>
+                    <MinDesc>{line4}</MinDesc>
                 </Flex>
             </Col>
             <Col md={12} xs={24}>

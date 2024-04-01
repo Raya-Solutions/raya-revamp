@@ -21,6 +21,7 @@ const Contact = () => {
                 line1={ContactInfo.line1}
                 line2={ContactInfo.line2}
                 line3={ContactInfo.line3}
+                line4={ContactInfo.line4}
                 />
             <ContactForm
                 title="Got any questions?"

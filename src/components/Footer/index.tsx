@@ -37,10 +37,10 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Col lg={10} md={10} sm={12} xs={12}>
                 <Empty />
                 <Language>{t("Address")}</Language>
-                <Para>Unit 1205 Cityland Mega Plaza</Para>
+                <Para>Cityland Mega Plaza</Para>
                 <Para>ADB Avenue, Topaz Rd</Para>
-                <Para>San Antonio, Kalakhang Pasig</Para>
-                <Para>1605 Metro Manila</Para>
+                <Para>San Antonio, Pasig City</Para>
+                <Para>Metro Manila</Para>
               </Col>
             </Row>
           </Container>
