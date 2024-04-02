@@ -55,11 +55,13 @@ const MiddleBlock = (
       <Slide triggerOnce>
         <Row justify="center" align="middle">
           <ContentWrapper>
-              {typeof title === "string" && <Title>{title}</Title>}
+              {title !== "" &&  <Title>{title}</Title> }
             <Col lg={24} md={24} sm={24} xs={24} style={middleBlockContentStyles(border)}>
-               <Content>
-                {t(content)}
-              </Content>
+                { content !== "" &&
+                    <Content>
+                         {t(content)}
+                    </Content>
+                }
               {typeof button === "string" && destinationType === "section" && (
                 <Button name="submit" onClick={() => scrollTo(destination ?? "")}>
                   {t(button)}

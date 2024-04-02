@@ -23,7 +23,7 @@ const ServicesProducts = () => {
     return (
         <Container>
             <MiddleBlock
-              title={ProductCategories.title}
+              title=""
               content={ProductCategories.text}
               section={ProductCategories.section}/>
         </Container>

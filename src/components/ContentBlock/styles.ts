@@ -8,7 +8,7 @@ export const StyledFlex = styled(Flex)`
     }
 `
 export const ContentSection = styled("section")`
-  padding: 5rem 0 0 0;
+  padding: 5rem 0 5rem 0;
   width: 100%;
   @media only screen and (max-width: 1024px) {
   }
