@@ -4,6 +4,7 @@ import Packages from "../../content/PricingPage/PackagesContent.json";
 import {Tabs} from "antd";
 import type {TabsProps} from "antd";
 import TabContent from "../../components/TabContent";
+import {Title} from "../TailoredSolutions/styles";
 
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
@@ -49,8 +50,10 @@ const items: TabsProps['items'] = [
 const Pricing = () => {
     return (
         <Container>
-            <MiddleBlock title={Overview.title} content=""/>
-            <Tabs defaultActiveKey="1" items={items} centered/>
+            <Title>{Overview.title}</Title>
+            <Tabs defaultActiveKey="1" items={items} centered style={{
+                paddingBottom: "2rem"
+            }}/>
         </Container>
     );
 };

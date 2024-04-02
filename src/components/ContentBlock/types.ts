@@ -3,6 +3,7 @@ import {CollapseProps} from "antd";
 export interface ContentBlockProps {
   icon: string;
   title: string;
+  titleAlignment?: string;
   content?: string;
   collapseItems?: CollapseProps['items'];
   destination?: string;

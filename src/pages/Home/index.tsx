@@ -66,7 +66,8 @@ const Home = () => {
                     content=""
                     section={ServicesProducts.section}/>
                   <ContentBlock
-                    direction="right"
+                    direction="left"
+                    titleAlignment="right"
                     icon=""
                     id="tailored-solutions"
                     content={TailoredSolutions.content}

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MiddleBlockSection = styled("section")`
   position: relative;
-  padding: 7.5rem 2rem 7rem;
+  padding: 2rem 2rem 5rem 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -13,6 +13,7 @@ export const MiddleBlockSection = styled("section")`
 `;
 
 export const Content = styled("p")`
+  text-align: justify;
   padding: 0.75rem 0 0.75rem;
 `;
 

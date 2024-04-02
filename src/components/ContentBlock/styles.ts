@@ -2,12 +2,13 @@ import {Flex, Row} from "antd";
 import styled from "styled-components";
 
 export const StyledFlex = styled(Flex)`
+    gap: 2em;
     @media only screen and (max-width: 1024px) {
        align-items: center; 
     }
 `
 export const ContentSection = styled("section")`
-  padding: 10rem 0 8rem;
+  padding: 5rem 0 0 0;
   width: 100%;
   @media only screen and (max-width: 1024px) {
   }

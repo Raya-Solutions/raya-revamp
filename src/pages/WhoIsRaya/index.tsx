@@ -1,6 +1,6 @@
 import "./styles.css"
 import React from "react";
-import WhoIsRayaContent from "../../content/WhoIsRayaPage/WhoIsRayaConent.json"
+import WhoIsRayaContent from "../../content/WhoIsRayaPage/WhoIsRayaContent.json"
 import {MinSubtitle} from "../TailoredSolutions/styles";
 import {Card, Col, Flex, Popover} from "antd";
 import {LeftCircleFilled, RightCircleFilled} from "@ant-design/icons";

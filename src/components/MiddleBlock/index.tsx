@@ -8,7 +8,7 @@ import {SvgIcon} from "../../common/SvgIcon";
 import {Link} from "react-router-dom";
 
 interface MiddleBlockProps {
-  title: string;
+  title?: string;
   content: string;
   button?: string;
   border?: string;
@@ -55,9 +55,9 @@ const MiddleBlock = (
       <Slide triggerOnce>
         <Row justify="center" align="middle">
           <ContentWrapper>
-              <Title>{title}</Title>
+              {typeof title === "string" && <Title>{title}</Title>}
             <Col lg={24} md={24} sm={24} xs={24} style={middleBlockContentStyles(border)}>
-              <Content>
+               <Content>
                 {t(content)}
               </Content>
               {typeof button === "string" && destinationType === "section" && (
