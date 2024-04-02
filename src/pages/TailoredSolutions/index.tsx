@@ -1,9 +1,9 @@
-import React, {lazy, useEffect} from "react";
-import {Col, ConfigProvider, Flex, Row, Tabs} from "antd";
+import React, {useEffect} from "react";
+import {Col, ConfigProvider, Row, Tabs} from "antd";
 import {tailoredSolutionsContent} from "./TailoredSolutionsContent";
 import {scrollUp} from "../../common/ScrollToTop";
+import {FlexWithBackgroundImage, Title} from "./styles";
 
-const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 
 const TailoredSolutions = () => {
     useEffect(() => {
@@ -18,39 +18,37 @@ const TailoredSolutions = () => {
             theme={{
                 components: {
                     Tabs: {
-                        // itemColor: "#20e5f6",
-                        // inkBarColor: "#FFFFFF",
-                        // itemSelectedColor: "#FFFFFF",
-                        // itemHoverColor: "#FFFFFF"
+                        itemSelectedColor: "#349ade",
+                        inkBarColor: "#349ade",
+                        cardBg: "#349ade",
+                        itemColor: "#FFFFFF",
+                        itemHoverColor: "#FFFFFF",
                     }
                 },
                 token: {
-                    controlItemBgActive: "#349ade"
                 }
             }}
         >
-            <Flex vertical style={{
-                // <img src={`/img/svg/${src}`} alt={src} width={width} height={height} />
-            }}>
-                <MiddleBlock title="Tailored Solutions" content=""/>
+            <FlexWithBackgroundImage vertical justify="center" align="center">
+
+                {/*<MiddleBlock title="Tailored Solutions" content=""/>*/}
+                <Title >Tailored Solutions</Title>
                 <Row justify="center" style={{
                     marginBottom: "10em",
                 }}>
-                    <Col span={12} style={{
-                        backgroundImage: "url(/img/svg/tailored-bg.svg)",
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "300px 300px",
-                    }}>
+                    <Col span={12} >
                     <Tabs
+                        type="card"
                         size="large"
                         tabPosition={window.innerWidth <= 684 ? "top" : "left"}
                         items={tailoredSolutionsContent}
                     />
                     </Col>
                 </Row>
-            </Flex>
+            </FlexWithBackgroundImage>
         </ConfigProvider>
     )
 }
+
 
 export default TailoredSolutions;
