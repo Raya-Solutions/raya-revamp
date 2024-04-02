@@ -35,20 +35,19 @@ interface SectionItemsBlockProps {
 
 const TailoredSolutionsNav = ({buttons} : TailoredSolutionsNavProps) => {
   return (
-        <>
+        <StyledFlex justify="center" wrap="wrap" style={{
+          paddingBottom: "5rem"
+        }}>
           {
             buttons?.map((item: { color?: string; title: string; key?: string; }) => {
-              const url = `/tailored-solutions?activeKey=${item.key ?? ""}`;
                   return (
-                      <Link to={url}>
                         <Button color={item.color}>
                             {item.title}
                         </Button>
-                      </Link>
                   )
                 })
           }
-        </>
+        </StyledFlex>
   )
 }
 
@@ -78,6 +77,7 @@ const SectionItemsBlock = ({items}: SectionItemsBlockProps) => {
 const ContentBlock = ({
   icon,
   title,
+  titleAlignment,
   content,
   section,
   button,
@@ -97,12 +97,12 @@ const ContentBlock = ({
           {
             icon !== "" &&
             <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
-          </Col>
+              <SvgIcon src={icon} width="100%" height="100%" />
+            </Col>
           }
           <Col lg={11} md={11} sm={11} xs={24}>
             <Flex vertical align={window.innerWidth < 684 ? "center" : ""}>
-              <Title>{title}</Title>
+              {titleAlignment !== "right" && <Title>{title}</Title>}
             </Flex>
             <ContentWrapper>
                 <Content>{content}</Content>
@@ -119,8 +119,11 @@ const ContentBlock = ({
               </ServiceWrapper>
             </ContentWrapper>
           </Col>
-          <Col lg={11} md={11} sm={11} xs={24}>
+          <Col lg={11} md={11} sm={11} xs={24} >
+          {titleAlignment === "right" && <Title>{title}</Title>}
+          <Link to="/tailored-solutions">
             <TailoredSolutionsNav buttons={button}/>
+          </Link>
           </Col>
         </StyledRow>
       </Fade>
