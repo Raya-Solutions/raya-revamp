@@ -6,7 +6,6 @@ import type {TabsProps} from "antd";
 import TabContent from "../../components/TabContent";
 import {Title} from "../TailoredSolutions/styles";
 
-const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 
 const items: TabsProps['items'] = [
