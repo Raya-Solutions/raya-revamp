@@ -166,7 +166,7 @@ export const tailoredSolutionsContent = [
         children: <>
             <MinSubtitle>
                 Raya for Retail is a comprehensive solution tailored to meet the unique needs of retail businesses.
-                With Microsoft Dynamics 365 and ERPNext, Raya for Retail offers retailers a unified platform to manage all aspects of their operations,
+                With Microsoft Dynamics 365, Raya for Retail offers retailers a unified platform to manage all aspects of their operations,
                 including inventory management, sales tracking, customer relationship management, and financial management.
             </MinSubtitle>
             <MinTitle>
@@ -199,7 +199,7 @@ export const tailoredSolutionsContent = [
         children: <>
             <MinSubtitle>
                 Raya for Manufacturing is a robust solution designed to address the complex needs of manufacturing
-                businesses. Powered by Microsoft Dynamics 365 and ERPNext, Raya for Manufacturing enables manufacturers
+                businesses. Powered by Microsoft Dynamics 365, Raya for Manufacturing enables manufacturers
                 to streamline their operations, optimize production processes, and drive efficiency and innovation.
             </MinSubtitle>
             <MinTitle>
@@ -232,7 +232,7 @@ export const tailoredSolutionsContent = [
         children: <>
             <MinSubtitle>
                 Raya for Construction is a comprehensive solution tailored to meet the unique needs of construction
-                firms. Leveraging the power of Microsoft Dynamics 365 and ERPNext, Raya for Construction enables
+                firms. Leveraging the power of Microsoft Dynamics 365, Raya for Construction enables
                 construction companies to manage projects more efficiently, optimize resource allocation, and
                 improve collaboration and communication across project teams.
             </MinSubtitle>
@@ -267,7 +267,7 @@ export const tailoredSolutionsContent = [
             <MinSubtitle>
                 Raya for Services is a tailored solution designed to meet the unique needs of service-based businesses,
                 including consulting firms, professional services firms, and service contractors.
-                Powered by Microsoft Dynamics 365 and ERPNext, Raya for Services enables service providers to streamline service delivery,
+                Powered by Microsoft Dynamics 365, Raya for Services enables service providers to streamline service delivery,
                 optimize resource allocation, and improve client satisfaction and retention.
             </MinSubtitle>
             <MinTitle>
@@ -300,7 +300,7 @@ export const tailoredSolutionsContent = [
         children: <>
             <MinSubtitle>
                 Raya for Hospitality is a tailored solution designed to address the unique needs of hospitality businesses,
-                including hotels, restaurants, and resorts. Built on Microsoft Dynamics 365 and ERPNext,
+                including hotels, restaurants, and resorts. Built on Microsoft Dynamics 365,
                 Raya for Hospitality offers hospitality companies a comprehensive platform to streamline operations,
                 enhance guest experiences, and drive revenue growth. Key features include:
             </MinSubtitle>

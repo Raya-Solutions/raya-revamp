@@ -15,23 +15,6 @@
         "includedServices": ["Comprehensive implementation", "Extensive customizations", "Training for an unlimited number of users", "Data migration", "6 months post-launch support"],
         "priceRange": "₱1,925,000 to ₱3,850,000"
       }],
-  "erpnextDeals": [
-    {
-      "name": "Basic Package",
-      "includedServices": ["Setup and configuration of core modules", "Basic training for staff", "1 month of support"],
-      "priceRange": "₱250,000 to ₱660,000"
-    },
-    {
-      "name": "Professional Package",
-      "includedServices": ["Extended setup including customizations", "Training for up to 20 users", "Data migration assistance", "3 months of support"],
-      "priceRange": "₱660,000 to ₱1,320,000"
-    },
-    {
-      "name": "Premium Package",
-      "includedServices": ["Full deployment with all modules", "Advanced customizations", "System integrations", "Comprehensive training for staff", "Data migration", "6 months of ongoing support"],
-      "priceRange": "₱1,320,000 to ₱2,640,000"
-    }
-  ],
   "rayaERPDeals": {
     "base": [
       {
