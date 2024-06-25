@@ -30,20 +30,20 @@ const Header = ({ t }: { t: TFunction }) => {
       <>
         <Link to={"/services-products"}>
           <CustomNavLinkSmall>
-            <Span>{t("Services & Products")}</Span>
+            <Span>{"About Us"}</Span>
           </CustomNavLinkSmall>
         </Link>
 
         <Link to={"/pricing"}>
           <CustomNavLinkSmall>
-            <Span>{t("Pricing")}</Span>
+            <Span>{"Success Stories"}</Span>
           </CustomNavLinkSmall>
         </Link>
 
         <Link to={"/who-is-raya"}>
           <CustomNavLinkSmall>
             <Span>
-              <Span>{t("Who is Raya?")}</Span>
+              <Span>{"Contact Us"}</Span>
             </Span>
           </CustomNavLinkSmall>
         </Link>

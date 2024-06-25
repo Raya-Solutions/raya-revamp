@@ -22,20 +22,18 @@ const Footer = ({ t }: { t: TFunction }) => {
                 <Language>{t("Contact")}</Language>
                 <Large to="/support">{t("Submit a Ticket")}</Large>
                 <Para>
-                  {t(`Do you have any question? Feel free to reach out.`)}
+                  {`Do you have any question? Feel free to reach out.`}
                 </Para>
               </Col>
               <Col lg={8} md={8} sm={12} xs={12}>
-                <Title>{t("Company")}</Title>
-                <Large to="/who-is-raya">{t("About")}</Large>
+                <Language>{"Phone"}</Language>
+                <Para>+63 917-175-8812</Para>
               </Col>
               <Col lg={6} md={6} sm={12} xs={12}>
-                <Empty />
+                <Language>{"Email"}</Language>
+                <Para>ranz@rayasolutionsph.com</Para>
               </Col>
-            </Row>
-            <Row justify="space-between">
               <Col lg={10} md={10} sm={12} xs={12}>
-                <Empty />
                 <Language>{t("Address")}</Language>
                 <Para>Cityland Mega Plaza</Para>
                 <Para>ADB Avenue, Topaz Rd</Para>

@@ -8,7 +8,7 @@ export const StyledContainer = styled("div")<{
   align-content: center;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1250px;
   margin-right: auto;
   margin-left: auto;
   //padding-right: inherit;
