@@ -83,6 +83,7 @@ const ContentBlock = ({
   button,
   id,
   direction,
+  callToAction
 }: ContentBlockProps) => {
 
 
@@ -116,6 +117,9 @@ const ContentBlock = ({
                 <Row justify="space-between">
                   <SectionItemsBlock items={section}/>
                 </Row>
+                <StyledFlex style={{ marginTop: "1rem" }}>
+                  <Button>{callToAction}</Button>
+                </StyledFlex>
               </ServiceWrapper>
             </ContentWrapper>
           </Col>

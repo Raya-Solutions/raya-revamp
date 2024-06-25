@@ -38,7 +38,6 @@ export const ContentWrapper = styled("div")`
 
 export const ServiceWrapper = styled("div")`
   display: flex;
-  justify-content: space-between;
   text-align: justify;
   max-width: 100%;
      
