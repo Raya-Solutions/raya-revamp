@@ -3,6 +3,7 @@ import IntroContent from "../../content/HomePage/IntroContent.json";
 import About from "../../content/HomePage/AboutContent.json";
 import ServicesProducts from "../../content/HomePage/ServicesProductsContent.json";
 import TailoredSolutions from "../../content/HomePage/TailoredSolutionsContent.json";
+import SuccessStories from "../../content/HomePage/SuccessStories.json";
 import {scrollUp} from "../../common/ScrollToTop";
 
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -53,28 +54,32 @@ const Home = () => {
                     direction="right"
                     title={IntroContent.title}
                     content={IntroContent.text}
+                    // will redirect to contact us page
+                    callToAction={IntroContent.callToAction}
                     icon="asset1.jpg"
                     id="intro"
                   />
                   <MiddleBlock
                     title=""
                     border="#37e7e1"
+                    // will redirect to about us page
                     content={About.description}
+                    callToAction={About.callToAction}
+                    ctaDirection="top"
                   />
                 <MiddleBlock
                     title={ServicesProducts.title}
                     content=""
+                    callToAction={ServicesProducts.callToAction}
+                    ctaDirection="bottom"
                     section={ServicesProducts.section}/>
-                  <ContentBlock
-                    direction="left"
-                    titleAlignment="right"
-                    icon=""
-                    id="tailored-solutions"
-                    content={TailoredSolutions.content}
-                    title={TailoredSolutions.title}
-                    button={TailorSolutionButtonContent}
-                    destination="/tailored-solutions"
-                  />
+                <MiddleBlock
+                    title={SuccessStories.title}
+                    content={SuccessStories.description}
+                    section={SuccessStories.examples}
+                    imageSrc="technologies.png"
+                    callToAction={SuccessStories.callToAction}
+                    ctaDirection="bottom"/>
             </Container>
       </>
   );
