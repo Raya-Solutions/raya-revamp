@@ -56,7 +56,7 @@ const Home = () => {
                     content={IntroContent.text}
                     // will redirect to contact us page
                     callToAction={IntroContent.callToAction}
-                    icon="asset1.jpg"
+                    icon="asset1.png"
                     id="intro"
                   />
                   <MiddleBlock
