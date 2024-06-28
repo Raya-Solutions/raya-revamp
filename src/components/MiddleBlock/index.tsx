@@ -90,32 +90,44 @@ const MiddleBlock = ({
                 </div>
               )}
             </Col>
-            {imageSrc && (
-              <Col lg={24} md={12} sm={12} xs={12} style={{ textAlign: "center", marginTop: "1rem" }}>
+            {imageSrc ? (
+              <Col lg={24} md={12} sm={12} xs={12} style={{ textAlign: "center", marginBottom:'2rem' }}>
+                <>
                 <PngIcon
                   src={imageSrc}
                   width={"100%"} 
                   height={"auto"}
                 />
+              {callToAction && ctaDirection === "bottom" && (
+            <div style={{ textAlign: "center", marginTop: "1rem" }}>
+              <Button>{t(callToAction)}</Button>
+            </div>
+          )}
+                </>
+              
               </Col>
-            )}
-          </ContentWrapper>
-          <Row justify="space-between">
+            ):(
+<Row justify="space-between">
             {section?.map((item, id) => (
               <Col key={id} xs={24} lg={12} xl={12}>
                 <ServiceContainer>
                   {item.icon && <SvgIcon src={item.icon} width="75px" height="75px" /> }
+
                   <ServiceContentContainer
-                    style={{ maxWidth: "400px", textAlign: "justify" }}
-                  >
-                    <MinTitle>{t(item.title)}</MinTitle>
-                    <MinPara>{t(item.content)}</MinPara>
-                  </ServiceContentContainer>
+                  style={{ maxWidth: "250px", textAlign: "left" }}
+                >
+                  <MinTitle>{t(item.title)}</MinTitle>
+                  <MinPara>{t(item.content)}</MinPara>
+                </ServiceContentContainer>
+
                 </ServiceContainer>
               </Col>
             ))}
           </Row>
-          {callToAction && ctaDirection === "bottom" && (
+            )}
+          </ContentWrapper>
+          
+          {callToAction && ctaDirection === "bottom" && imageSrc === null && (
             <div style={{ textAlign: "center", marginTop: "1rem" }}>
               <Button>{t(callToAction)}</Button>
             </div>

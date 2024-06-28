@@ -4,10 +4,11 @@ import WhoIsRayaContent from "../../content/WhoIsRayaPage/WhoIsRayaContent.json"
 import {MinSubtitle} from "../TailoredSolutions/styles";
 import {Card, Col, Flex, Popover} from "antd";
 import {LeftCircleFilled, RightCircleFilled} from "@ant-design/icons";
-import {MinPara, PopoverContainer} from "../../components/ContentBlock/styles";
+import {MinTitle,MinPara, PopoverContainer} from "../../components/ContentBlock/styles";
 import {QualitySlide, StyledCarousel, StyledFlex} from "./styles";
 import {SvgIcon} from "../../common/SvgIcon";
 import {SubHeading} from "../../components/TabContent/styles";
+import {Title} from "../TailoredSolutions/styles";
 
 interface QualitiesPopoverProps  {
     items: {
@@ -28,7 +29,7 @@ export const QualitiesPopover = ({items} : QualitiesPopoverProps) => {
                                 borderColor: "#349ade",
                                 textAlign: "center"}}
                                   size="small">
-                                <SubHeading> {item.title}</SubHeading>
+                                <SubHeading> {item.description}</SubHeading>
                             </Card>
                         </Popover>
                     </Col>
@@ -41,7 +42,16 @@ export const QualitiesPopover = ({items} : QualitiesPopoverProps) => {
 
 const WhoIsRaya = () => {
     return (
-        <StyledFlex justify="center">
+
+        <>
+
+<div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+  <Title>{WhoIsRayaContent.title}</Title>
+  <p>{WhoIsRayaContent.description}</p>
+</div>
+
+
+ <StyledFlex justify="center">
             <StyledCarousel
                 arrows
                 prevArrow={<LeftCircleFilled/>}
@@ -76,6 +86,8 @@ const WhoIsRaya = () => {
             </StyledCarousel>
 
         </StyledFlex>
+        </>
+        
     )
 }
 

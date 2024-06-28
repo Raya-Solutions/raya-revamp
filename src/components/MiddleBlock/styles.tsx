@@ -13,7 +13,7 @@ export const MiddleBlockSection = styled("section")`
 `;
 
 export const Content = styled("p")`
-  text-align: justify;
+ 
   padding: 0.75rem 0 0.75rem;
 `;
 

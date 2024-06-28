@@ -4,24 +4,24 @@
   "section": [
     {
       "title": "ERP Solutions",
-      "content": "Our ERP solutions streamline financial and operational processes, improve efficiency, and support complex business requirements. Whether it's Microsoft Dynamics 365 for robust enterprise management, ERPNext for flexible open-source customization, or Odoo for modular adaptability, we ensure seamless integration and maximum ROI",
+      "content": "Comprehensive ERP implementation services tailored to your business needs.",
       "icon": "custom-business.svg"
     },
     {
       "title": "AI Integration",
-      "content": "Transform your business with AI-powered solutions. Implement predictive models to anticipate market trends and customer behavior, use advanced analytics to gain insights from your data, and automate repetitive tasks to increase efficiency and reduce operational costs",
+      "content": "Leverage AI for smarter business processes.",
       "icon": "supply-chain.svg"
     },
     {
       "title": "CRM Solutions",
-      "content": "Our CRM solutions, including Microsoft Dynamics 365 CRM, help you manage customer interactions, sales, and marketing more effectively. Tailored CRM implementations are designed to meet your specific business needs, ensuring improved customer satisfaction and retention",
+      "content": "Optimize customer relationships with our CRM solutions. ",
       "icon": "crm.svg"
     },
     {
       "title": "Business Consulting",
-      "content": "We provide tailored advice on strategic planning, operational improvement, and technology integration. Our consulting services help you develop and implement effective business strategies, optimize your processes, and ensure seamless technology integration",
+      "content": "Expert consulting to enhance your business operations. ",
       "icon": "project-mngmt.svg"
     }
   ],
-  "callToAction": "Explore our Services"
+  "callToAction": "Explore\n our \nServices"
 }

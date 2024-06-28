@@ -28,15 +28,15 @@ const Header = ({ t }: { t: TFunction }) => {
   const MenuItem = () => {
     return (
       <>
-        <Link to={"/services-products"}>
+        <Link to={"/who-is-raya"}>
           <CustomNavLinkSmall>
             <Span>{"About Us"}</Span>
           </CustomNavLinkSmall>
         </Link>
 
-        <Link to={"/pricing"}>
+        <Link to={"/services-products"}>
           <CustomNavLinkSmall>
-            <Span>{"Success Stories"}</Span>
+            <Span>{"Services"}</Span>
           </CustomNavLinkSmall>
         </Link>
 
